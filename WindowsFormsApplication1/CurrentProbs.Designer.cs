@@ -30,22 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CurrentProbs));
+            System.Windows.Forms.Label employ_IDLabel;
+            System.Windows.Forms.Label first_NameLabel;
+            System.Windows.Forms.Label last_NameLabel;
+            System.Windows.Forms.Label statusLabel;
+            System.Windows.Forms.Label detailsLabel;
+            System.Windows.Forms.Label codeLabel;
             this.dataSet1 = new WindowsFormsApplication1.DataSet1();
             this.currentProbsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.currentProbsTableAdapter = new WindowsFormsApplication1.DataSet1TableAdapters.CurrentProbsTableAdapter();
             this.tableAdapterManager = new WindowsFormsApplication1.DataSet1TableAdapters.TableAdapterManager();
             this.currentProbsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.currentProbsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.currentProbsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +60,18 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employ_IDTextBox = new System.Windows.Forms.TextBox();
+            this.first_NameTextBox = new System.Windows.Forms.TextBox();
+            this.last_NameTextBox = new System.Windows.Forms.TextBox();
+            this.statusTextBox = new System.Windows.Forms.TextBox();
+            this.detailsTextBox = new System.Windows.Forms.TextBox();
+            this.codeTextBox = new System.Windows.Forms.TextBox();
+            employ_IDLabel = new System.Windows.Forms.Label();
+            first_NameLabel = new System.Windows.Forms.Label();
+            last_NameLabel = new System.Windows.Forms.Label();
+            statusLabel = new System.Windows.Forms.Label();
+            detailsLabel = new System.Windows.Forms.Label();
+            codeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentProbsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentProbsBindingNavigator)).BeginInit();
@@ -108,9 +126,34 @@
             this.currentProbsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.currentProbsBindingNavigator.Name = "currentProbsBindingNavigator";
             this.currentProbsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.currentProbsBindingNavigator.Size = new System.Drawing.Size(639, 25);
+            this.currentProbsBindingNavigator.Size = new System.Drawing.Size(1087, 25);
             this.currentProbsBindingNavigator.TabIndex = 0;
             this.currentProbsBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -144,17 +187,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -162,7 +198,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -171,38 +207,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // currentProbsBindingNavigatorSaveItem
             // 
             this.currentProbsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.currentProbsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("currentProbsBindingNavigatorSaveItem.Image")));
             this.currentProbsBindingNavigatorSaveItem.Name = "currentProbsBindingNavigatorSaveItem";
-            this.currentProbsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.currentProbsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.currentProbsBindingNavigatorSaveItem.Text = "Save Data";
             this.currentProbsBindingNavigatorSaveItem.Click += new System.EventHandler(this.currentProbsBindingNavigatorSaveItem_Click);
             // 
@@ -218,7 +236,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.currentProbsDataGridView.DataSource = this.currentProbsBindingSource;
-            this.currentProbsDataGridView.Location = new System.Drawing.Point(0, 28);
+            this.currentProbsDataGridView.Location = new System.Drawing.Point(15, 215);
             this.currentProbsDataGridView.Name = "currentProbsDataGridView";
             this.currentProbsDataGridView.Size = new System.Drawing.Size(637, 220);
             this.currentProbsDataGridView.TabIndex = 1;
@@ -259,11 +277,125 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Code";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
+            // employ_IDLabel
+            // 
+            employ_IDLabel.AutoSize = true;
+            employ_IDLabel.Location = new System.Drawing.Point(12, 42);
+            employ_IDLabel.Name = "employ_IDLabel";
+            employ_IDLabel.Size = new System.Drawing.Size(58, 13);
+            employ_IDLabel.TabIndex = 2;
+            employ_IDLabel.Text = "Employ ID:";
+            // 
+            // employ_IDTextBox
+            // 
+            this.employ_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentProbsBindingSource, "Employ ID", true));
+            this.employ_IDTextBox.Location = new System.Drawing.Point(79, 39);
+            this.employ_IDTextBox.Name = "employ_IDTextBox";
+            this.employ_IDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.employ_IDTextBox.TabIndex = 3;
+            // 
+            // first_NameLabel
+            // 
+            first_NameLabel.AutoSize = true;
+            first_NameLabel.Location = new System.Drawing.Point(12, 68);
+            first_NameLabel.Name = "first_NameLabel";
+            first_NameLabel.Size = new System.Drawing.Size(60, 13);
+            first_NameLabel.TabIndex = 4;
+            first_NameLabel.Text = "First Name:";
+            // 
+            // first_NameTextBox
+            // 
+            this.first_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentProbsBindingSource, "First Name", true));
+            this.first_NameTextBox.Location = new System.Drawing.Point(79, 65);
+            this.first_NameTextBox.Name = "first_NameTextBox";
+            this.first_NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.first_NameTextBox.TabIndex = 5;
+            // 
+            // last_NameLabel
+            // 
+            last_NameLabel.AutoSize = true;
+            last_NameLabel.Location = new System.Drawing.Point(12, 94);
+            last_NameLabel.Name = "last_NameLabel";
+            last_NameLabel.Size = new System.Drawing.Size(61, 13);
+            last_NameLabel.TabIndex = 6;
+            last_NameLabel.Text = "Last Name:";
+            // 
+            // last_NameTextBox
+            // 
+            this.last_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentProbsBindingSource, "Last Name", true));
+            this.last_NameTextBox.Location = new System.Drawing.Point(79, 91);
+            this.last_NameTextBox.Name = "last_NameTextBox";
+            this.last_NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.last_NameTextBox.TabIndex = 7;
+            // 
+            // statusLabel
+            // 
+            statusLabel.AutoSize = true;
+            statusLabel.Location = new System.Drawing.Point(12, 120);
+            statusLabel.Name = "statusLabel";
+            statusLabel.Size = new System.Drawing.Size(40, 13);
+            statusLabel.TabIndex = 8;
+            statusLabel.Text = "Status:";
+            // 
+            // statusTextBox
+            // 
+            this.statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentProbsBindingSource, "Status", true));
+            this.statusTextBox.Location = new System.Drawing.Point(79, 117);
+            this.statusTextBox.Name = "statusTextBox";
+            this.statusTextBox.Size = new System.Drawing.Size(100, 20);
+            this.statusTextBox.TabIndex = 9;
+            // 
+            // detailsLabel
+            // 
+            detailsLabel.AutoSize = true;
+            detailsLabel.Location = new System.Drawing.Point(12, 146);
+            detailsLabel.Name = "detailsLabel";
+            detailsLabel.Size = new System.Drawing.Size(42, 13);
+            detailsLabel.TabIndex = 10;
+            detailsLabel.Text = "Details:";
+            // 
+            // detailsTextBox
+            // 
+            this.detailsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentProbsBindingSource, "Details", true));
+            this.detailsTextBox.Location = new System.Drawing.Point(79, 143);
+            this.detailsTextBox.Name = "detailsTextBox";
+            this.detailsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.detailsTextBox.TabIndex = 11;
+            // 
+            // codeLabel
+            // 
+            codeLabel.AutoSize = true;
+            codeLabel.Location = new System.Drawing.Point(12, 172);
+            codeLabel.Name = "codeLabel";
+            codeLabel.Size = new System.Drawing.Size(35, 13);
+            codeLabel.TabIndex = 12;
+            codeLabel.Text = "Code:";
+            // 
+            // codeTextBox
+            // 
+            this.codeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentProbsBindingSource, "Code", true));
+            this.codeTextBox.Location = new System.Drawing.Point(79, 169);
+            this.codeTextBox.Name = "codeTextBox";
+            this.codeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.codeTextBox.TabIndex = 13;
+            // 
             // CurrentProbs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 248);
+            this.ClientSize = new System.Drawing.Size(1087, 462);
+            this.Controls.Add(employ_IDLabel);
+            this.Controls.Add(this.employ_IDTextBox);
+            this.Controls.Add(first_NameLabel);
+            this.Controls.Add(this.first_NameTextBox);
+            this.Controls.Add(last_NameLabel);
+            this.Controls.Add(this.last_NameTextBox);
+            this.Controls.Add(statusLabel);
+            this.Controls.Add(this.statusTextBox);
+            this.Controls.Add(detailsLabel);
+            this.Controls.Add(this.detailsTextBox);
+            this.Controls.Add(codeLabel);
+            this.Controls.Add(this.codeTextBox);
             this.Controls.Add(this.currentProbsDataGridView);
             this.Controls.Add(this.currentProbsBindingNavigator);
             this.Name = "CurrentProbs";
@@ -306,5 +438,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.TextBox employ_IDTextBox;
+        private System.Windows.Forms.TextBox first_NameTextBox;
+        private System.Windows.Forms.TextBox last_NameTextBox;
+        private System.Windows.Forms.TextBox statusTextBox;
+        private System.Windows.Forms.TextBox detailsTextBox;
+        private System.Windows.Forms.TextBox codeTextBox;
     }
 }
