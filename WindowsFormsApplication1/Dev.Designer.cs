@@ -52,6 +52,7 @@
             this.SubProb.TabIndex = 1;
             this.SubProb.Text = "Submit a Problem";
             this.SubProb.UseVisualStyleBackColor = true;
+            this.SubProb.Click += new System.EventHandler(this.SubProb_Click);
             // 
             // Sug
             // 

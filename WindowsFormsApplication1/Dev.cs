@@ -22,5 +22,11 @@ namespace WindowsFormsApplication1
             var curr = new CurrentProbs();
             curr.Show();
         }
+
+        private void SubProb_Click(object sender, EventArgs e)
+        {
+            var sub = new SubmitNewProb();
+            sub.Show();
+        }
     }
 }

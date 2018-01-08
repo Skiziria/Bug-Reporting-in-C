@@ -9,3 +9,10 @@
         }
     }
 }
+
+namespace WindowsFormsApplication1.DataSet1TableAdapters {
+    
+    
+    public partial class CurrentProbsTableAdapter {
+    }
+}

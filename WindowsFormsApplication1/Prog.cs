@@ -19,7 +19,8 @@ namespace WindowsFormsApplication1
 
         private void SubProb_Click(object sender, EventArgs e)
         {
-
+            var sub = new SubmitNewProb();
+            sub.Show();
         }
 
         private void Sug_Click(object sender, EventArgs e)

@@ -7,10 +7,10 @@ C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\Window
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MainLogin.resources
-C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\BugData.mdf
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dev.resources
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Prog.resources
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Tester.resources
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Data server.mdf
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Data server_log.ldf
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CurrentProbs.resources
+C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SubmitNewProb.resources
