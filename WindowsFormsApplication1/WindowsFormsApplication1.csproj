@@ -69,19 +69,16 @@
       <DependentUpon>Form1.cs</DependentUpon>
       <Link>Form1.Designer.cs</Link>
     </Compile>
-    <Compile Include="BugDataSet.cs">
-      <DependentUpon>BugDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BugDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BugDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CurrentProbs.cs">
+    <Compile Include="CurrentProblems.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CurrentProbs.Designer.cs">
-      <DependentUpon>CurrentProbs.cs</DependentUpon>
+    <Compile Include="CurrentProblems.Designer.cs">
+      <DependentUpon>CurrentProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dev.cs">
       <SubType>Form</SubType>
@@ -97,11 +94,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SubmitNewProb.cs">
+    <Compile Include="SolveProblems.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubmitNewProb.Designer.cs">
-      <DependentUpon>SubmitNewProb.cs</DependentUpon>
+    <Compile Include="SolveProblems.Designer.cs">
+      <DependentUpon>SolveProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitProblems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitProblems.Designer.cs">
+      <DependentUpon>SubmitProblems.cs</DependentUpon>
     </Compile>
     <Compile Include="Tester.cs">
       <SubType>Form</SubType>
@@ -113,8 +116,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
       <Link>Form1.resx</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="CurrentProbs.resx">
-      <DependentUpon>CurrentProbs.cs</DependentUpon>
+    <EmbeddedResource Include="CurrentProblems.resx">
+      <DependentUpon>CurrentProblems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dev.resx">
       <DependentUpon>Dev.cs</DependentUpon>
@@ -131,21 +134,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SubmitNewProb.resx">
-      <DependentUpon>SubmitNewProb.cs</DependentUpon>
+    <EmbeddedResource Include="SolveProblems.resx">
+      <DependentUpon>SolveProblems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitProblems.resx">
+      <DependentUpon>SubmitProblems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tester.resx">
       <DependentUpon>Tester.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BugDataSet.xsc">
-      <DependentUpon>BugDataSet.xsd</DependentUpon>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
-    <None Include="BugDataSet.xsd">
+    <None Include="DataSet1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
     </None>
-    <None Include="BugDataSet.xss">
-      <DependentUpon>BugDataSet.xsd</DependentUpon>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

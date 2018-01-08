@@ -72,6 +72,7 @@
             this.Controls.Add(this.CurrentProb);
             this.Name = "Tester";
             this.Text = "Tester";
+            this.Load += new System.EventHandler(this.Tester_Load);
             this.ResumeLayout(false);
 
         }

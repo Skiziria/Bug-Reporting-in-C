@@ -19,14 +19,19 @@ namespace WindowsFormsApplication1
 
         private void SubmitProb_Click(object sender, EventArgs e)
         {
-            var sub = new SubmitNewProb();
+            var sub = new SubmitProblems();
             sub.Show();
         }
 
         private void CurrentProb_Click(object sender, EventArgs e)
         {
-            var curr = new CurrentProbs();
+            var curr = new CurrentProblems();
             curr.Show();
+        }
+
+        private void Tester_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

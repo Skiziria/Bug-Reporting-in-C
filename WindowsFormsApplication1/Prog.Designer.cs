@@ -72,6 +72,7 @@
             this.SolProb.TabIndex = 3;
             this.SolProb.Text = "Solve a Problem";
             this.SolProb.UseVisualStyleBackColor = true;
+            this.SolProb.Click += new System.EventHandler(this.SolProb_Click);
             // 
             // Prog
             // 
@@ -84,6 +85,7 @@
             this.Controls.Add(this.CurrentProb);
             this.Name = "Prog";
             this.Text = "Prog";
+            this.Load += new System.EventHandler(this.Prog_Load);
             this.ResumeLayout(false);
 
         }

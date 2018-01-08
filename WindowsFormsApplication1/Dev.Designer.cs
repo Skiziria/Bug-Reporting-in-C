@@ -83,6 +83,7 @@
             this.Controls.Add(this.CurProb);
             this.Name = "Dev";
             this.Text = "Dev";
+            this.Load += new System.EventHandler(this.Dev_Load);
             this.ResumeLayout(false);
 
         }

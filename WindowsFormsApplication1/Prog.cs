@@ -19,8 +19,8 @@ namespace WindowsFormsApplication1
 
         private void SubProb_Click(object sender, EventArgs e)
         {
-            var sub = new SubmitNewProb();
-            sub.Show();
+           var sub = new SubmitProblems();
+           sub.Show();
         }
 
         private void Sug_Click(object sender, EventArgs e)
@@ -30,8 +30,18 @@ namespace WindowsFormsApplication1
 
         private void CurrentProb_Click(object sender, EventArgs e)
         {
-            var curr = new CurrentProbs();
+            var curr = new CurrentProblems();
             curr.Show();
+        }
+
+        private void Prog_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SolProb_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
