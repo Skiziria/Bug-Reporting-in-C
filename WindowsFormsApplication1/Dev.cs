@@ -33,5 +33,11 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void Solv_Click(object sender, EventArgs e)
+        {
+            var solve = new SolveProblems();
+            solve.Show();
+        }
     }
 }

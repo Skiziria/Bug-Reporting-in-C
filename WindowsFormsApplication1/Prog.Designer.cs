@@ -30,7 +30,6 @@
         {
             this.CurrentProb = new System.Windows.Forms.Button();
             this.SubProb = new System.Windows.Forms.Button();
-            this.Sug = new System.Windows.Forms.Button();
             this.SolProb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -54,16 +53,6 @@
             this.SubProb.UseVisualStyleBackColor = true;
             this.SubProb.Click += new System.EventHandler(this.SubProb_Click);
             // 
-            // Sug
-            // 
-            this.Sug.Location = new System.Drawing.Point(12, 72);
-            this.Sug.Name = "Sug";
-            this.Sug.Size = new System.Drawing.Size(108, 23);
-            this.Sug.TabIndex = 2;
-            this.Sug.Text = "Suggestion";
-            this.Sug.UseVisualStyleBackColor = true;
-            this.Sug.Click += new System.EventHandler(this.Sug_Click);
-            // 
             // SolProb
             // 
             this.SolProb.Location = new System.Drawing.Point(126, 12);
@@ -80,7 +69,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.SolProb);
-            this.Controls.Add(this.Sug);
             this.Controls.Add(this.SubProb);
             this.Controls.Add(this.CurrentProb);
             this.Name = "Prog";
@@ -94,7 +82,6 @@
 
         private System.Windows.Forms.Button CurrentProb;
         private System.Windows.Forms.Button SubProb;
-        private System.Windows.Forms.Button Sug;
         private System.Windows.Forms.Button SolProb;
     }
 }

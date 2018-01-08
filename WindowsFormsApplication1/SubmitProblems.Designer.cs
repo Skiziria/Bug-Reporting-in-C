@@ -41,7 +41,6 @@
             this.DateBox = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.DeletBut = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,21 +158,11 @@
             this.DeletBut.UseVisualStyleBackColor = true;
             this.DeletBut.Click += new System.EventHandler(this.DeletBut_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(569, 72);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // SubmitProblems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 475);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.DeletBut);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.DateBox);
@@ -211,6 +200,5 @@
         private System.Windows.Forms.TextBox DateBox;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button DeletBut;
-        private System.Windows.Forms.Button button3;
     }
 }

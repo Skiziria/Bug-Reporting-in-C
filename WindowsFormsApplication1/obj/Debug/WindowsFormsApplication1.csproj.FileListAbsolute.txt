@@ -14,3 +14,4 @@ C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\Window
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Data server_log.ldf
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CurrentProblems.resources
 C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SubmitProblems.resources
+C:\Users\sandr\Google Drive\University Work\Advanced Software Engineering\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SolveProblems.resources

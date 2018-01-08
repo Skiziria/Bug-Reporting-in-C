@@ -30,7 +30,6 @@
         {
             this.CurrentProb = new System.Windows.Forms.Button();
             this.SubmitProb = new System.Windows.Forms.Button();
-            this.Sug = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CurrentProb
@@ -53,21 +52,11 @@
             this.SubmitProb.UseVisualStyleBackColor = true;
             this.SubmitProb.Click += new System.EventHandler(this.SubmitProb_Click);
             // 
-            // Sug
-            // 
-            this.Sug.Location = new System.Drawing.Point(12, 71);
-            this.Sug.Name = "Sug";
-            this.Sug.Size = new System.Drawing.Size(108, 23);
-            this.Sug.TabIndex = 2;
-            this.Sug.Text = "Suggestion";
-            this.Sug.UseVisualStyleBackColor = true;
-            // 
             // Tester
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(283, 251);
-            this.Controls.Add(this.Sug);
             this.Controls.Add(this.SubmitProb);
             this.Controls.Add(this.CurrentProb);
             this.Name = "Tester";
@@ -81,6 +70,5 @@
 
         private System.Windows.Forms.Button CurrentProb;
         private System.Windows.Forms.Button SubmitProb;
-        private System.Windows.Forms.Button Sug;
     }
 }

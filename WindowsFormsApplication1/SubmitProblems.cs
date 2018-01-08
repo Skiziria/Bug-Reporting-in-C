@@ -41,7 +41,6 @@ namespace WindowsFormsApplication1
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -57,8 +56,6 @@ namespace WindowsFormsApplication1
             }
             con.Close();
             disp_date();
-            
-
         }
 
         public void disp_date()

@@ -41,7 +41,9 @@ namespace WindowsFormsApplication1
 
         private void SolProb_Click(object sender, EventArgs e)
         {
-
+            
+            var solve = new SolveProblems();
+            solve.Show();
         }
     }
 }
