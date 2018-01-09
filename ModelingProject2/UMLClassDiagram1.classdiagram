@@ -1,1 +1,241 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="51c469bb-2493-43cd-a9b8-ea67a9217043" name="UMLClassDiagram1" linkedPackageId="23d18be8-ba5c-4ee6-9973-f5299afb6773" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ba9d6201-97dd-4d1b-9c8f-30d1ee879fc0">
+      <profileInstance Id="4744c2e2-4bdb-4699-aed4-c91e846d3940" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ab066757-2a0d-4054-8ce4-ac257fe54db4">
+      <profileInstance Id="59e6eb5e-5bad-4ab9-a6d4-b4b8f311e1be" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b1bd30f4-0290-4cf7-9586-45c0070f2ecd" name="Form1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c5168e5-0b4f-447b-b672-638eacd233b9" />
+        <targetEnds>
+          <association Id="8412f856-367b-4aa5-8edd-e7b15dad7db8" isDerived="false" sourceEndRoleName="Form1" targetEndRoleName="Prog" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d2cbbe36-e2dc-47de-bd9a-74ed4c607964" LastKnownName="Prog" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="717744f5-ed32-461f-ba45-0640ce4b841a" name="Form1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="961ee263-2f66-4ee2-b9fe-cc32701b01b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8cecdf7c-2b64-472c-9763-052927ee2195" name="Prog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6a8e0e7-531e-4765-8185-bcecd02417dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="192b61e8-8868-4b3f-b9f6-78d6f2a93c98" />
+          </association>
+          <association Id="140b1bdc-fcb6-4629-937f-73d235f2000f" isDerived="false" sourceEndRoleName="Form1" targetEndRoleName="Dev" isLeaf="false" isAbstract="false">
+            <classMoniker Id="dd9e7b32-3bad-4046-a1ef-576fe693e13e" LastKnownName="Dev" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="537cd243-8d08-4ea7-a983-e647c5dd4385" name="Form1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="001b0f28-5fd9-43c5-9a6d-5beb44b5e2fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e29984f-de10-48cb-83e2-2dbd11296e53" name="Dev" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c1e86333-5981-49f2-ac93-9a426b2dbcfc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c5785337-eb49-45eb-a0de-9be63dbda3ac" />
+          </association>
+          <association Id="58b1433d-7be9-472a-a71d-7b97c9c98b82" isDerived="false" sourceEndRoleName="Form1" targetEndRoleName="Tester" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a11cf7aa-d969-4db4-86c3-a312f483df57" LastKnownName="Tester" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6dab03b5-71ad-48a6-9dcb-ff368159a1a0" name="Form1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f0b73af-4928-4c6a-9341-a35ca06f92c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d708b742-8c46-46ed-bbe7-37a48edb2707" name="Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="87d301d3-987b-4f10-8f04-c9f18a732738" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="726b061c-3149-4ef5-8aa3-32c8c6904b48" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dd9e7b32-3bad-4046-a1ef-576fe693e13e" name="Dev" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e986c636-f7ff-42b9-9bfe-c3fd88a444a0" />
+        <targetEnds>
+          <association Id="62597c5d-e5aa-4b20-ad48-83cd6ba9032b" isDerived="false" sourceEndRoleName="Dev" targetEndRoleName="Solve Problems" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cd7f1b21-a3f5-48f9-9e18-a6ff811eaa9e" LastKnownName="Solve Problems" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04a6e9df-a28c-4067-b496-95e171ff7530" name="Dev" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61102352-c5be-4900-a2b1-cabfb1f3d54a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f32e693-dc75-4dbd-a148-b2c9026f63bd" name="Solve Problems" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c24cf3fe-7321-4b60-96e9-ca998c3c3d8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c842ff8c-cfad-4da1-b52e-c85c98133626" />
+          </association>
+          <association Id="f1666327-5331-4dde-82fc-2bf6692f9126" isDerived="false" sourceEndRoleName="Dev" targetEndRoleName="Submit Problems" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3e97d1cb-9ab9-4a4e-8e99-f442d38d33b3" LastKnownName="Submit Problems" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae04cffa-c7cb-4592-bc4d-30ce7f836f24" name="Dev" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="350e21c2-58a9-41b9-b219-e91c9748281e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba3ed376-dfae-4258-98f5-5b4c03d6cb26" name="Submit Problems" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b4cc1541-f1cd-4727-93ca-0824987ce787" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7ba925a6-2c15-44ef-bcaf-4e5f0d327f02" />
+          </association>
+          <association Id="1988a246-c07a-46c4-933f-7954c67ba4b3" isDerived="false" sourceEndRoleName="Dev" targetEndRoleName="Current Problems" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7c2f2cd4-35ab-4b2e-8861-5ac8798301b6" LastKnownName="Current Problems" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5594927e-d46a-482c-bb9d-eef998469ad1" name="Dev" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="065dd8dd-c052-442f-a50c-aa80445e92f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1ef9149-b760-4916-80bd-e4459584c1e2" name="Current Problems" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3e02ad88-6d16-4b26-8c9f-bc4cfa52b490" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ff874660-8b32-4fec-9804-62cfb53c16c0" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d2cbbe36-e2dc-47de-bd9a-74ed4c607964" name="Prog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eb290734-cab7-4d4e-8f28-db5b8a024a72" />
+        <targetEnds>
+          <association Id="4c8817f8-786b-4f50-a6c3-aee42c1d0a44" isDerived="false" sourceEndRoleName="Prog" targetEndRoleName="Solve Problems" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cd7f1b21-a3f5-48f9-9e18-a6ff811eaa9e" LastKnownName="Solve Problems" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ebd7c98-e919-439e-aa49-37246c8c5f1b" name="Prog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b92be6d6-1f30-4720-815b-5ae48a6b8b05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b725dfec-ce0a-44b2-bd2b-a4a555338ee0" name="Solve Problems" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e3f1e845-c6a7-4267-b37a-2b1ee74325c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="92aec113-8cc9-4467-befd-9975a2ee6453" />
+          </association>
+          <association Id="7a1e636c-f967-406b-ac76-c79d3e8b23b4" isDerived="false" sourceEndRoleName="Prog" targetEndRoleName="Submit Problems" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3e97d1cb-9ab9-4a4e-8e99-f442d38d33b3" LastKnownName="Submit Problems" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="535f3949-e640-4696-80c6-342100c397d0" name="Prog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b4f23bd8-39e0-4131-aac8-10b4fa988ed3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="671263e7-09b5-47cd-8dcc-3d7a32724212" name="Submit Problems" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05afc03f-f5f4-4d5c-b92e-dde109322e45" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="87016ceb-5c07-43c3-b92b-e553bd4b51ab" />
+          </association>
+          <association Id="d43f5b3a-ce87-47af-b977-b5e14b299ee7" isDerived="false" sourceEndRoleName="Prog" targetEndRoleName="Current Problems" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7c2f2cd4-35ab-4b2e-8861-5ac8798301b6" LastKnownName="Current Problems" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc1459f5-8dce-40af-b614-0d68785d122f" name="Prog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f148f006-342f-471d-a3b8-84d0eddc26ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="556ac413-1573-4504-930a-ec7745a2d1aa" name="Current Problems" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0bb5f578-bfb2-42a6-81ef-13406f520a76" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f5465db2-1b3f-4323-b0c8-edb2a3fd9793" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7c2f2cd4-35ab-4b2e-8861-5ac8798301b6" name="Current Problems" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a0e3fafa-85b6-4ec1-861b-d23efecd2e58" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a11cf7aa-d969-4db4-86c3-a312f483df57" name="Tester" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f6aa30ed-e958-4ba7-a739-65ee785e6681" />
+        <targetEnds>
+          <association Id="a5a8c574-d6f9-44f4-a6c6-0d7208abf547" isDerived="false" sourceEndRoleName="Tester" targetEndRoleName="Current Problems" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7c2f2cd4-35ab-4b2e-8861-5ac8798301b6" LastKnownName="Current Problems" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd72881b-cc85-4a74-a99f-5a9c874ec623" name="Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f3e81f0b-24fc-4928-8c9d-35227f747bf5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f4e66b0-e25a-4668-a455-db627f852153" name="Current Problems" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3712f0f7-ec62-4817-9d1d-71b197eab10e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="39fee1bb-099b-4813-a67b-0a8d12402190" />
+          </association>
+          <association Id="d2d2e3ff-2144-4ea7-9541-7825bcfe7859" isDerived="false" sourceEndRoleName="Tester" targetEndRoleName="Submit Problems" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3e97d1cb-9ab9-4a4e-8e99-f442d38d33b3" LastKnownName="Submit Problems" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c832e0c-a85e-47c4-8c18-de8531e8dbfc" name="Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f09c4574-ed31-468f-91cb-f546c5fc0d6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a3e7973e-949f-44f6-a48d-23d16bb4bc2a" name="Submit Problems" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="935a15c6-27a1-4a33-a2df-89a46dde39bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f195468c-68a2-47d6-b5f0-c09aef019c9a" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cd7f1b21-a3f5-48f9-9e18-a6ff811eaa9e" name="Solve Problems" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c38d447d-923e-4caa-8286-1cad262b7aea" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3e97d1cb-9ab9-4a4e-8e99-f442d38d33b3" name="Submit Problems" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="17576aff-74b8-45a8-8d16-b663ba5322d7" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="23d18be8-ba5c-4ee6-9973-f5299afb6773" name="ModelingProject2">
+    <elementDefinition Id="09c89d20-dca1-4b2b-bf9d-0a3d6b6a2293" />
+  </package>
+</logicalClassDesignerModel>
