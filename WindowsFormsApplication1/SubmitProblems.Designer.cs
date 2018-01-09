@@ -109,7 +109,7 @@
             // 
             // EntryBox
             // 
-            this.EntryBox.Location = new System.Drawing.Point(63, 6);
+            this.EntryBox.Location = new System.Drawing.Point(63, 9);
             this.EntryBox.Name = "EntryBox";
             this.EntryBox.Size = new System.Drawing.Size(176, 20);
             this.EntryBox.TabIndex = 7;

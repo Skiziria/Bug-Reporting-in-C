@@ -128,7 +128,8 @@ namespace WindowsFormsApplication1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Please enter valid details");
+                MessageBox.Show("Please enter valid details"); 
+                
             }
             con.Close();
             disp_date2();

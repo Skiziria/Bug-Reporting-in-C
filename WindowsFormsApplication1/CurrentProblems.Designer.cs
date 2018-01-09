@@ -60,6 +60,8 @@
             this.dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.detailsTextBox = new System.Windows.Forms.TextBox();
             this.codeTextBox = new System.Windows.Forms.TextBox();
+            this.DispCode = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             entryIDLabel = new System.Windows.Forms.Label();
             submittedByLabel = new System.Windows.Forms.Label();
             dateLabel = new System.Windows.Forms.Label();
@@ -135,6 +137,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CurrentProblemsTableAdapter = this.currentProblemsTableAdapter;
+            this.tableAdapterManager.SolvedProblemsTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApplication1.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // currentProblemsBindingNavigator
@@ -160,7 +163,7 @@
             this.currentProblemsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.currentProblemsBindingNavigator.Name = "currentProblemsBindingNavigator";
             this.currentProblemsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.currentProblemsBindingNavigator.Size = new System.Drawing.Size(711, 25);
+            this.currentProblemsBindingNavigator.Size = new System.Drawing.Size(1131, 25);
             this.currentProblemsBindingNavigator.TabIndex = 0;
             this.currentProblemsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -329,11 +332,31 @@
             this.codeTextBox.Size = new System.Drawing.Size(200, 137);
             this.codeTextBox.TabIndex = 11;
             // 
+            // DispCode
+            // 
+            this.DispCode.Location = new System.Drawing.Point(593, 30);
+            this.DispCode.Name = "DispCode";
+            this.DispCode.Size = new System.Drawing.Size(115, 23);
+            this.DispCode.TabIndex = 13;
+            this.DispCode.Text = "Display Code in Color";
+            this.DispCode.UseVisualStyleBackColor = true;
+            this.DispCode.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(593, 61);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(515, 334);
+            this.webBrowser1.TabIndex = 15;
+            // 
             // CurrentProblems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 423);
+            this.ClientSize = new System.Drawing.Size(1131, 453);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.DispCode);
             this.Controls.Add(entryIDLabel);
             this.Controls.Add(this.entryIDTextBox);
             this.Controls.Add(submittedByLabel);
@@ -387,5 +410,7 @@
         private System.Windows.Forms.DateTimePicker dateDateTimePicker;
         private System.Windows.Forms.TextBox detailsTextBox;
         private System.Windows.Forms.TextBox codeTextBox;
+        private System.Windows.Forms.Button DispCode;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
